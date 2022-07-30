@@ -1,0 +1,14 @@
+com\tours\pages\flightdeparturereturn\Departure.class
+com\tours\pages\flightItinerarypage\FlightItineraryPage.class
+com\tours\pages\RegistrationConfirmationPage.class
+com\tours\pages\main\UserInformation.class
+com\tours\pages\common\AbstractComponent.class
+com\tours\pages\FlightDetail\Preferences.class
+com\tours\pages\FlightDetail\FlightDetailPage.class
+com\tours\pages\main\MailingInformation.class
+com\tours\pages\main\RagistrationPage.class
+com\tours\pages\FlightDetail\FlightDetails.class
+com\tours\pages\flightdeparturereturn\FlightDepartureReturnPage.class
+com\tours\pages\billingaddress\BillingAddressPage.class
+com\tours\pages\flightdeparturereturn\Return.class
+com\tours\pages\main\ContactInformation.class

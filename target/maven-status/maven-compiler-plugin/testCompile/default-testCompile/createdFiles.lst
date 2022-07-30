@@ -1,0 +1,5 @@
+com\tours\tests\helper\BrowserTypes.class
+com\tours\tests\Base\BaseTest.class
+com\tours\tests\RegistrationPageTest.class
+com\tours\tests\factory\DataFactory.class
+com\tours\tests\factory\DriverFactory.class
