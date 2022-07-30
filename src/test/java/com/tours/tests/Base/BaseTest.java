@@ -9,20 +9,10 @@ import org.testng.annotations.Parameters;
 import java.net.MalformedURLException;
 
 public class BaseTest {
-    protected WebDriver driver;
 
-    @BeforeTest
-    @Parameters("browser")
-    public void getDriverInstance(String browser) throws MalformedURLException {
-      this.driver= DriverFactory.getInstance().getDriver(browser);
+    public WebDriver getDriverInstance(String browser) {
+      return DriverFactory.getInstance().getDriver(browser);
     }
-
-  /*  @BeforeTest
-    public void getDriverInstance() throws MalformedURLException {
-        this.driver= DriverFactory.getInstance().getDriver(BrowserTypes.CHROME.name());
-    }*/
-
-
 
     @AfterTest
     public void close(){

@@ -11,6 +11,8 @@ import com.tours.tests.Base.BaseTest;
 import com.tours.tests.factory.DataFactory;
 import org.testng.Assert;
 import org.testng.annotations.*;
+
+import java.net.MalformedURLException;
 import java.time.Duration;
 import java.util.Map;
 
@@ -24,8 +26,9 @@ public class RegistrationPageTest extends BaseTest {
     private FlightItineraryPage flightItineraryPage;
 
     @BeforeTest
-    public void initializePage(){
-        ragistrationPage = new RagistrationPage(driver);
+    @Parameters("browser")
+    public void initializePage(String browser) {
+        ragistrationPage = new RagistrationPage(getDriverInstance(browser));
         ragistrationPage.goTo("https://vins-udemy.s3.amazonaws.com/docker/docker-book-flight.html");
     }
 
