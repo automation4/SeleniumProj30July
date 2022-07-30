@@ -6,12 +6,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.remote.CapabilityType;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-
-import java.net.MalformedURLException;
-import java.net.URI;
 
 public class DriverFactory {
     private static DriverFactory instance= new DriverFactory();
@@ -22,7 +16,6 @@ public class DriverFactory {
     }
 
     public ThreadLocal<WebDriver> driver = new ThreadLocal<>();
-
     public WebDriver getDriver(String browser){
         switch (browser.toLowerCase()){
             case "chrome":
@@ -32,8 +25,8 @@ public class DriverFactory {
                 this.driver.set(new ChromeDriver(chromeOptions));
                 break;
             case "firefox":
-                WebDriverManager.firefoxdriver().setup();
-                FirefoxOptions firefoxOptions = new FirefoxOptions();
+             WebDriverManager.firefoxdriver().setup();
+             FirefoxOptions firefoxOptions = new FirefoxOptions();
                 firefoxOptions.addArguments("--start-maximized");
                 this.driver.set(new FirefoxDriver(firefoxOptions));
                 break;
@@ -75,7 +68,6 @@ public class DriverFactory {
     }*/
 
     public void closeDriver(){
-        this.driver.get().close();
         this.driver.get().quit();
     }
 
