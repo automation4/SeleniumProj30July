@@ -1,13 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="9" passed="9">
+<testng-results skipped="0" failed="0" total="18" passed="18">
   <reporter-output>
   </reporter-output>
-  <suite name="Practice regression" duration-ms="32770" started-at="2022-07-30T14:31:32Z" finished-at="2022-07-30T14:32:04Z">
+  <suite name="Practice regression" duration-ms="32620" started-at="2022-07-30T16:20:36Z" finished-at="2022-07-30T16:21:09Z">
     <groups>
     </groups>
-    <test name="Test case 2" duration-ms="32770" started-at="2022-07-30T14:31:32Z" finished-at="2022-07-30T14:32:04Z">
+    <test name="Test case 1" duration-ms="28825" started-at="2022-07-30T16:20:36Z" finished-at="2022-07-30T16:21:05Z">
       <class name="com.tours.tests.RegistrationPageTest">
-        <test-method status="PASS" signature="initializePage(java.lang.String)[pri:0, instance:com.tours.tests.RegistrationPageTest@42d80b78]" name="initializePage" is-config="true" duration-ms="12358" started-at="2022-07-30T20:01:32Z" finished-at="2022-07-30T20:01:44Z">
+        <test-method status="PASS" signature="initializePage(java.lang.String)[pri:0, instance:com.tours.tests.RegistrationPageTest@a74868d]" name="initializePage" is-config="true" duration-ms="9638" started-at="2022-07-30T21:50:36Z" finished-at="2022-07-30T21:50:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePage -->
+        <test-method status="PASS" signature="enterContactInformation()[pri:0, instance:com.tours.tests.RegistrationPageTest@a74868d]" name="enterContactInformation" duration-ms="379" started-at="2022-07-30T21:50:46Z" finished-at="2022-07-30T21:50:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterContactInformation -->
+        <test-method status="PASS" signature="enterMailingInformation()[pri:0, instance:com.tours.tests.RegistrationPageTest@a74868d]" name="enterMailingInformation" duration-ms="383" started-at="2022-07-30T21:50:46Z" finished-at="2022-07-30T21:50:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterMailingInformation -->
+        <test-method status="PASS" signature="enterUserInformation()[pri:0, instance:com.tours.tests.RegistrationPageTest@a74868d]" name="enterUserInformation" duration-ms="282" started-at="2022-07-30T21:50:47Z" finished-at="2022-07-30T21:50:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterUserInformation -->
+        <test-method status="PASS" signature="enterSubmit()[pri:0, instance:com.tours.tests.RegistrationPageTest@a74868d]" name="enterSubmit" duration-ms="57" started-at="2022-07-30T21:50:47Z" depends-on-methods="com.tours.tests.RegistrationPageTest.enterUserInformation, com.tours.tests.RegistrationPageTest.enterContactInformation, com.tours.tests.RegistrationPageTest.enterMailingInformation" finished-at="2022-07-30T21:50:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterSubmit -->
+        <test-method status="PASS" signature="confirmregistrationTest()[pri:0, instance:com.tours.tests.RegistrationPageTest@a74868d]" name="confirmregistrationTest" duration-ms="2140" started-at="2022-07-30T21:50:47Z" depends-on-methods="com.tours.tests.RegistrationPageTest.enterSubmit" finished-at="2022-07-30T21:50:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmregistrationTest -->
+        <test-method status="PASS" signature="enterFlightDetails()[pri:0, instance:com.tours.tests.RegistrationPageTest@a74868d]" name="enterFlightDetails" duration-ms="6310" started-at="2022-07-30T21:50:49Z" depends-on-methods="com.tours.tests.RegistrationPageTest.confirmregistrationTest" finished-at="2022-07-30T21:50:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterFlightDetails -->
+        <test-method status="PASS" signature="selectDepartureandReturn()[pri:0, instance:com.tours.tests.RegistrationPageTest@a74868d]" name="selectDepartureandReturn" duration-ms="8353" started-at="2022-07-30T21:50:56Z" depends-on-methods="com.tours.tests.RegistrationPageTest.enterFlightDetails" finished-at="2022-07-30T21:51:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectDepartureandReturn -->
+        <test-method status="PASS" signature="enterBillingAddress()[pri:0, instance:com.tours.tests.RegistrationPageTest@a74868d]" name="enterBillingAddress" duration-ms="494" started-at="2022-07-30T21:51:04Z" depends-on-methods="com.tours.tests.RegistrationPageTest.selectDepartureandReturn" finished-at="2022-07-30T21:51:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterBillingAddress -->
+        <test-method status="PASS" signature="FightconfirmationDetails()[pri:0, instance:com.tours.tests.RegistrationPageTest@a74868d]" name="FightconfirmationDetails" duration-ms="81" started-at="2022-07-30T21:51:04Z" depends-on-methods="com.tours.tests.RegistrationPageTest.enterBillingAddress" finished-at="2022-07-30T21:51:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FightconfirmationDetails -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.tours.tests.RegistrationPageTest@a74868d]" name="close" is-config="true" duration-ms="683" started-at="2022-07-30T21:51:04Z" finished-at="2022-07-30T21:51:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.tours.tests.RegistrationPageTest -->
+    </test> <!-- Test case 1 -->
+    <test name="Test case 2" duration-ms="32620" started-at="2022-07-30T16:20:36Z" finished-at="2022-07-30T16:21:09Z">
+      <class name="com.tours.tests.RegistrationPageTest">
+        <test-method status="PASS" signature="initializePage(java.lang.String)[pri:0, instance:com.tours.tests.RegistrationPageTest@5c072e3f]" name="initializePage" is-config="true" duration-ms="12604" started-at="2022-07-30T21:50:36Z" finished-at="2022-07-30T21:50:49Z">
           <params>
             <param index="0">
               <value>
@@ -18,78 +73,43 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializePage -->
-        <test-method status="PASS" signature="enterContactInformation()[pri:0, instance:com.tours.tests.RegistrationPageTest@42d80b78]" name="enterContactInformation" duration-ms="187" started-at="2022-07-30T20:01:44Z" finished-at="2022-07-30T20:01:44Z">
+        <test-method status="PASS" signature="enterContactInformation()[pri:0, instance:com.tours.tests.RegistrationPageTest@5c072e3f]" name="enterContactInformation" duration-ms="134" started-at="2022-07-30T21:50:49Z" finished-at="2022-07-30T21:50:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterContactInformation -->
-        <test-method status="PASS" signature="enterMailingInformation()[pri:0, instance:com.tours.tests.RegistrationPageTest@42d80b78]" name="enterMailingInformation" duration-ms="416" started-at="2022-07-30T20:01:44Z" finished-at="2022-07-30T20:01:44Z">
+        <test-method status="PASS" signature="enterMailingInformation()[pri:0, instance:com.tours.tests.RegistrationPageTest@5c072e3f]" name="enterMailingInformation" duration-ms="347" started-at="2022-07-30T21:50:49Z" finished-at="2022-07-30T21:50:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterMailingInformation -->
-        <test-method status="PASS" signature="enterUserInformation()[pri:0, instance:com.tours.tests.RegistrationPageTest@42d80b78]" name="enterUserInformation" duration-ms="115" started-at="2022-07-30T20:01:44Z" finished-at="2022-07-30T20:01:45Z">
+        <test-method status="PASS" signature="enterUserInformation()[pri:0, instance:com.tours.tests.RegistrationPageTest@5c072e3f]" name="enterUserInformation" duration-ms="77" started-at="2022-07-30T21:50:49Z" finished-at="2022-07-30T21:50:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterUserInformation -->
-        <test-method status="PASS" signature="enterSubmit()[pri:0, instance:com.tours.tests.RegistrationPageTest@42d80b78]" name="enterSubmit" duration-ms="231" started-at="2022-07-30T20:01:45Z" depends-on-methods="com.tours.tests.RegistrationPageTest.enterUserInformation, com.tours.tests.RegistrationPageTest.enterContactInformation, com.tours.tests.RegistrationPageTest.enterMailingInformation" finished-at="2022-07-30T20:01:45Z">
+        <test-method status="PASS" signature="enterSubmit()[pri:0, instance:com.tours.tests.RegistrationPageTest@5c072e3f]" name="enterSubmit" duration-ms="221" started-at="2022-07-30T21:50:49Z" depends-on-methods="com.tours.tests.RegistrationPageTest.enterUserInformation, com.tours.tests.RegistrationPageTest.enterContactInformation, com.tours.tests.RegistrationPageTest.enterMailingInformation" finished-at="2022-07-30T21:50:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterSubmit -->
-        <test-method status="PASS" signature="confirmregistrationTest()[pri:0, instance:com.tours.tests.RegistrationPageTest@42d80b78]" name="confirmregistrationTest" duration-ms="2110" started-at="2022-07-30T20:01:45Z" depends-on-methods="com.tours.tests.RegistrationPageTest.enterSubmit" finished-at="2022-07-30T20:01:47Z">
+        <test-method status="PASS" signature="confirmregistrationTest()[pri:0, instance:com.tours.tests.RegistrationPageTest@5c072e3f]" name="confirmregistrationTest" duration-ms="2085" started-at="2022-07-30T21:50:50Z" depends-on-methods="com.tours.tests.RegistrationPageTest.enterSubmit" finished-at="2022-07-30T21:50:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- confirmregistrationTest -->
-        <test-method status="PASS" signature="enterFlightDetails()[pri:0, instance:com.tours.tests.RegistrationPageTest@42d80b78]" name="enterFlightDetails" duration-ms="7246" started-at="2022-07-30T20:01:47Z" depends-on-methods="com.tours.tests.RegistrationPageTest.confirmregistrationTest" finished-at="2022-07-30T20:01:54Z">
+        <test-method status="PASS" signature="enterFlightDetails()[pri:0, instance:com.tours.tests.RegistrationPageTest@5c072e3f]" name="enterFlightDetails" duration-ms="7225" started-at="2022-07-30T21:50:52Z" depends-on-methods="com.tours.tests.RegistrationPageTest.confirmregistrationTest" finished-at="2022-07-30T21:50:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterFlightDetails -->
-        <test-method status="PASS" signature="selectDepartureandReturn()[pri:0, instance:com.tours.tests.RegistrationPageTest@42d80b78]" name="selectDepartureandReturn" duration-ms="8785" started-at="2022-07-30T20:01:54Z" depends-on-methods="com.tours.tests.RegistrationPageTest.enterFlightDetails" finished-at="2022-07-30T20:02:03Z">
+        <test-method status="PASS" signature="selectDepartureandReturn()[pri:0, instance:com.tours.tests.RegistrationPageTest@5c072e3f]" name="selectDepartureandReturn" duration-ms="8777" started-at="2022-07-30T21:50:59Z" depends-on-methods="com.tours.tests.RegistrationPageTest.enterFlightDetails" finished-at="2022-07-30T21:51:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectDepartureandReturn -->
-        <test-method status="PASS" signature="enterBillingAddress()[pri:0, instance:com.tours.tests.RegistrationPageTest@42d80b78]" name="enterBillingAddress" duration-ms="328" started-at="2022-07-30T20:02:03Z" depends-on-methods="com.tours.tests.RegistrationPageTest.selectDepartureandReturn" finished-at="2022-07-30T20:02:03Z">
+        <test-method status="PASS" signature="enterBillingAddress()[pri:0, instance:com.tours.tests.RegistrationPageTest@5c072e3f]" name="enterBillingAddress" duration-ms="331" started-at="2022-07-30T21:51:08Z" depends-on-methods="com.tours.tests.RegistrationPageTest.selectDepartureandReturn" finished-at="2022-07-30T21:51:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterBillingAddress -->
-        <test-method status="PASS" signature="FightconfirmationDetails()[pri:0, instance:com.tours.tests.RegistrationPageTest@42d80b78]" name="FightconfirmationDetails" duration-ms="40" started-at="2022-07-30T20:02:03Z" depends-on-methods="com.tours.tests.RegistrationPageTest.enterBillingAddress" finished-at="2022-07-30T20:02:03Z">
+        <test-method status="PASS" signature="FightconfirmationDetails()[pri:0, instance:com.tours.tests.RegistrationPageTest@5c072e3f]" name="FightconfirmationDetails" duration-ms="35" started-at="2022-07-30T21:51:08Z" depends-on-methods="com.tours.tests.RegistrationPageTest.enterBillingAddress" finished-at="2022-07-30T21:51:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FightconfirmationDetails -->
-        <test-method status="FAIL" signature="close()[pri:0, instance:com.tours.tests.RegistrationPageTest@42d80b78]" name="close" is-config="true" duration-ms="0" started-at="2022-07-30T20:02:03Z" finished-at="2022-07-30T20:02:03Z">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[Tried to run command without establishing a connection
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'DESKTOP-MOASIIL', ip: '172.20.240.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [1c65b87d-0d09-491b-bbb2-8735deca2feb, quit {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0, moz:accessibilityChecks: false, moz:buildID: 20220718155818, moz:debuggerAddress: localhost:53857, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21592, moz:profile: C:\Users\AVITA\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53857/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1c65b87d-0d09-491b-bbb2-8735deca2feb]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'DESKTOP-MOASIIL', ip: '172.20.240.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [1c65b87d-0d09-491b-bbb2-8735deca2feb, quit {}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0, moz:accessibilityChecks: false, moz:buildID: 20220718155818, moz:debuggerAddress: localhost:53857, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 21592, moz:profile: C:\Users\AVITA\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53857/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 1c65b87d-0d09-491b-bbb2-8735deca2feb
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$1(DriverCommandExecutor.java:105)
-	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1604)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.tours.tests.RegistrationPageTest@5c072e3f]" name="close" is-config="true" duration-ms="769" started-at="2022-07-30T21:51:08Z" finished-at="2022-07-30T21:51:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
