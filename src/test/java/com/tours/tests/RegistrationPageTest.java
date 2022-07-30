@@ -28,6 +28,7 @@ public class RegistrationPageTest extends BaseTest {
     @BeforeTest
     @Parameters("browser")
     public void initializePage(String browser) {
+        System.out.println("going to initiate browser --->  "+ browser);
         ragistrationPage = new RagistrationPage(getDriverInstance(browser));
         ragistrationPage.goTo("https://vins-udemy.s3.amazonaws.com/docker/docker-book-flight.html");
         System.out.println("initializing browser on the go");

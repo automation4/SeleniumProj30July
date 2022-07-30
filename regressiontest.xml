@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name = "Practice regression" parallel="tests">
-
+<suite name = "Practice regression" parallel="tests" thread-count="2">
     <test name ="Test case 1">
-        <parameter name="browser" value="firefox"></parameter>
+        <parameter name="browser" value="chrome"></parameter>
         <classes>
             <class name ="com.tours.tests.RegistrationPageTest"></class>
         </classes>
     </test>
     <test name ="Test case 2">
-        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="browser" value="firefox"></parameter>
         <classes>
             <class name ="com.tours.tests.RegistrationPageTest"></class>
         </classes>
