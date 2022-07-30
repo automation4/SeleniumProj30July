@@ -4,8 +4,10 @@ com\tours\pages\RegistrationConfirmationPage.class
 com\tours\pages\main\UserInformation.class
 com\tours\pages\common\AbstractComponent.class
 com\tours\pages\FlightDetail\Preferences.class
+helper\ExtentManager.class
 com\tours\pages\FlightDetail\FlightDetailPage.class
 com\tours\pages\main\MailingInformation.class
+helper\TestListener.class
 com\tours\pages\main\RagistrationPage.class
 com\tours\pages\FlightDetail\FlightDetails.class
 com\tours\pages\flightdeparturereturn\FlightDepartureReturnPage.class
