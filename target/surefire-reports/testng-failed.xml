@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Practice regression]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <test name="Test case 1(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.tours.tests.RegistrationPageTest">
+        <methods>
+          <include name="enterUserInformation"/>
+          <include name="enterFlightDetails"/>
+          <include name="enterMailingInformation"/>
+          <include name="selectDepartureandReturn"/>
+          <include name="enterContactInformation"/>
+          <include name="enterSubmit"/>
+          <include name="confirmregistrationTest"/>
+          <include name="enterBillingAddress"/>
+          <include name="FightconfirmationDetails"/>
+          <include name="close"/>
+          <include name="close"/>
+          <include name="initializePage"/>
+          <include name="initializePage"/>
+        </methods>
+      </class> <!-- com.tours.tests.RegistrationPageTest -->
+    </classes>
+  </test> <!-- Test case 1(failed) -->
+  <test name="Test case 2(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.tours.tests.RegistrationPageTest">
+        <methods>
+          <include name="enterUserInformation"/>
+          <include name="enterFlightDetails"/>
+          <include name="enterMailingInformation"/>
+          <include name="selectDepartureandReturn"/>
+          <include name="enterContactInformation"/>
+          <include name="enterSubmit"/>
+          <include name="confirmregistrationTest"/>
+          <include name="enterBillingAddress"/>
+          <include name="FightconfirmationDetails"/>
+          <include name="close"/>
+          <include name="close"/>
+          <include name="initializePage"/>
+          <include name="initializePage"/>
+        </methods>
+      </class> <!-- com.tours.tests.RegistrationPageTest -->
+    </classes>
+  </test> <!-- Test case 2(failed) -->
+</suite> <!-- Failed suite [Practice regression] -->
