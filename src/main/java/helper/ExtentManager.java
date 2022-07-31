@@ -11,13 +11,13 @@ public class ExtentManager {
 
     public static ExtentReports getReport() {
         if (extentReport == null) {
-            return createRport();
+            return createReport();
         }
         return extentReport;
 
     }
 
-    public static ExtentReports createRport(){
+    public static ExtentReports createReport(){
         ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("report\\extentreport.html");
         htmlReporter.config().setTheme(Theme.DARK);
         htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);

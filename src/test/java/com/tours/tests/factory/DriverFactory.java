@@ -15,7 +15,7 @@ public class DriverFactory {
         return instance;
     }
 
-    public ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+    private ThreadLocal<WebDriver> driver = new ThreadLocal<>();
     public WebDriver getDriver(String browser){
         switch (browser.toLowerCase()){
             case "chrome":
