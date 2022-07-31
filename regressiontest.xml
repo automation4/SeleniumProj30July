@@ -4,6 +4,7 @@
 <suite name = "Practice regression" parallel="tests" thread-count="2">
     <listeners>
         <listener class-name="helper.TestListener"></listener>
+        <listener class-name="helper.RetryListener"></listener>
     </listeners>
     <test name ="Test case 1">
         <parameter name="browser" value="chrome"></parameter>
@@ -11,10 +12,10 @@
             <class name ="com.tours.tests.RegistrationPageTest"></class>
         </classes>
     </test>
-    <test name ="Test case 2">
+    <!--<test name ="Test case 2">
         <parameter name="browser" value="firefox"></parameter>
         <classes>
             <class name ="com.tours.tests.RegistrationPageTest"></class>
         </classes>
-    </test>
+    </test>-->
 </suite>

@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Departure extends AbstractComponent {
 
-    @FindBy(xpath = "//h1[contains(text(),'Departure')]/following-sibling::table[1]")
+    @FindBy(xpath = "//h1[contains(text(),'Departure')]/following-sibling::table[1]3")
     private WebElement departureflight;
 
     public Departure(WebDriver driver) {

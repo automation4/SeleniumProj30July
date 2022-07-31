@@ -1,16 +1,19 @@
 package com.tours.pages.common;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
+import java.util.Date;
 import java.util.List;
 
 public abstract class AbstractComponent {
-    protected WebDriverWait wait;
-    protected WebDriver driver;
+    protected static WebDriverWait wait;
+    protected static WebDriver driver;
 
     public AbstractComponent(final WebDriver driver){
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -32,6 +35,14 @@ public abstract class AbstractComponent {
 
     public void radioSelection(List<WebElement> element,String value){
             element.stream().filter(d -> d.getAttribute("value").equalsIgnoreCase(value)).forEach(WebElement::click);
+    }
+
+    public static String  getScreenshotPath(String methodname) throws IOException {
+        File source = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        File destination = new File("screenshot\\"+methodname+new Date().getTime()+".png");
+        String filepath = destination.getAbsolutePath();
+        FileUtils.copyFile(source, destination);
+        return filepath;
     }
     public abstract boolean isDisplayed();
 }

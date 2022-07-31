@@ -11,8 +11,6 @@ import com.tours.tests.Base.BaseTest;
 import com.tours.tests.factory.DataFactory;
 import org.testng.Assert;
 import org.testng.annotations.*;
-
-import java.net.MalformedURLException;
 import java.time.Duration;
 import java.util.Map;
 

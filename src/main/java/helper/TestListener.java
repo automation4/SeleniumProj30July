@@ -5,9 +5,13 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
+import com.tours.pages.common.AbstractComponent;
+import org.testng.IAnnotationTransformer2;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+
+import java.io.IOException;
 
 public class TestListener implements ITestListener {
     private static ExtentReports extentReports = ExtentManager.getReport();
@@ -27,7 +31,12 @@ public class TestListener implements ITestListener {
     @Override
     public void onTestFailure(ITestResult iTestResult) {
     testThread.get().log(Status.FAIL,MarkupHelper.createLabel("Fail",ExtentColor.AMBER));
-
+    testThread.get().log(Status.INFO,iTestResult.getThrowable());
+        try {
+            testThread.get().addScreenCaptureFromPath(AbstractComponent.getScreenshotPath(iTestResult.getMethod().getMethodName()));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
